@@ -1,9 +1,9 @@
-﻿using DogHouse.Application.Interfaces;
-using DogHouse.Domain.Entities;
-using DogHouse.Infrastructure.Persistence.Data;
+﻿using Dogshouseservice.Application.Interfaces;
+using Dogshouseservice.Domain.Entities;
+using Dogshouseservice.Infrastructure.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace DogHouse.Infrastructure.Persistence.Repositories;
+namespace Dogshouseservice.Infrastructure.Persistence.Repositories;
 
 public class DogRepository : IDogRepository
 {

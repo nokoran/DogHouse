@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogHouse.Api", "DogHouse.Api\DogHouse.Api.csproj", "{61067F5E-0594-458C-8B86-06A52C1019AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogshouseservice.Api", "Dogshouseservice.Api\Dogshouseservice.Api.csproj", "{61067F5E-0594-458C-8B86-06A52C1019AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogHouse.Application", "DogHouse.Application\DogHouse.Application.csproj", "{DB93812E-94F2-4C53-B13C-1AE598FB03FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogshouseservice.Application", "Dogshouseservice.Application\Dogshouseservice.Application.csproj", "{DB93812E-94F2-4C53-B13C-1AE598FB03FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogHouse.Domain", "DogHouse.Domain\DogHouse.Domain.csproj", "{D40D093D-F82F-4103-9FE0-87DB71DAEF8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogshouseservice.Domain", "Dogshouseservice.Domain\Dogshouseservice.Domain.csproj", "{D40D093D-F82F-4103-9FE0-87DB71DAEF8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogHouse.Infrastructure", "DogHouse.Infrastructure\DogHouse.Infrastructure.csproj", "{F17470FC-6664-43AA-9D94-A17B86FD019D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogshouseservice.Infrastructure", "Dogshouseservice.Infrastructure\Dogshouseservice.Infrastructure.csproj", "{F17470FC-6664-43AA-9D94-A17B86FD019D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogHouse.Tests", "DogHouse.Tests\DogHouse.Tests.csproj", "{E96547A7-A9C5-41C7-AECE-55B18BD16449}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogshouseservice.Tests", "Dogshouseservice.Tests\Dogshouseservice.Tests.csproj", "{E96547A7-A9C5-41C7-AECE-55B18BD16449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

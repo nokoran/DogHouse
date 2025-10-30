@@ -4,10 +4,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>DogHouse.Application</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DogHouse.Domain\DogHouse.Domain.csproj" />
+      <ProjectReference Include="..\Dogshouseservice.Domain\Dogshouseservice.Domain.csproj" />
     </ItemGroup>
 
 </Project>

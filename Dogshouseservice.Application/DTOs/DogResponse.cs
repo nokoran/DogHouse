@@ -1,4 +1,4 @@
-﻿namespace DogHouse.Api.DTOs;
+﻿namespace Dogshouseservice.Api.DTOs;
 
 public class DogResponse
 {

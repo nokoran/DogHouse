@@ -1,6 +1,6 @@
-﻿using DogHouse.Domain.Entities;
+﻿using Dogshouseservice.Domain.Entities;
 
-namespace DogHouse.Application.Interfaces;
+namespace Dogshouseservice.Application.Interfaces;
 
 public interface IDogRepository
 {

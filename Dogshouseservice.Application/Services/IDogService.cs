@@ -1,6 +1,6 @@
-﻿using DogHouse.Api.DTOs;
+﻿using Dogshouseservice.Api.DTOs;
 
-namespace DogHouse.Application.Services;
+namespace Dogshouseservice.Application.Services;
 
 public interface IDogService
 {

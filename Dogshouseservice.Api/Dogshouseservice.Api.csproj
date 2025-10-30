@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>DogHouse.Api</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,8 +22,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DogHouse.Application\DogHouse.Application.csproj" />
-      <ProjectReference Include="..\DogHouse.Infrastructure\DogHouse.Infrastructure.csproj" />
+      <ProjectReference Include="..\Dogshouseservice.Application\Dogshouseservice.Application.csproj" />
+      <ProjectReference Include="..\Dogshouseservice.Infrastructure\Dogshouseservice.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

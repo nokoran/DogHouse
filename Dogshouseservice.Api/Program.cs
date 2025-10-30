@@ -1,7 +1,7 @@
-using DogHouse.Infrastructure.Persistence.Data;
-using DogHouse.Infrastructure.Persistence.Repositories;
-using DogHouse.Application.Interfaces;
-using DogHouse.Application.Services;
+using Dogshouseservice.Infrastructure.Persistence.Data;
+using Dogshouseservice.Infrastructure.Persistence.Repositories;
+using Dogshouseservice.Application.Interfaces;
+using Dogshouseservice.Application.Services;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 

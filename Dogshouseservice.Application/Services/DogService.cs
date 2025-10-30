@@ -1,8 +1,8 @@
-﻿using DogHouse.Api.DTOs;
-using DogHouse.Application.Interfaces;
-using DogHouse.Domain.Entities;
+﻿using Dogshouseservice.Api.DTOs;
+using Dogshouseservice.Application.Interfaces;
+using Dogshouseservice.Domain.Entities;
 
-namespace DogHouse.Application.Services;
+namespace Dogshouseservice.Application.Services;
 
 public class DogService : IDogService
 {

@@ -1,8 +1,8 @@
-﻿using DogHouse.Domain.Entities;
+﻿using Dogshouseservice.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace DogHouse.Infrastructure.Persistence.Data;
+namespace Dogshouseservice.Infrastructure.Persistence.Data;
 
 public class AppDbContext : DbContext
 {
