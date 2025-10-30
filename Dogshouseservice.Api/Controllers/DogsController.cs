@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dogshouseservice.Api.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class DogsController : ControllerBase
     {
