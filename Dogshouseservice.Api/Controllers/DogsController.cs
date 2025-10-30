@@ -1,42 +1,49 @@
+using Dogshouseservice.Api.DTOs;
+using Dogshouseservice.Application.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DogHouse.Api.Controllers
+namespace Dogshouseservice.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class DogsController : ControllerBase
     {
-        // GET: api/<DogsController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IDogService _dogService;
+        public DogsController(IDogService dogService)
         {
-            return new string[] { "value1", "value2" };
+            _dogService = dogService;
         }
-
-        // GET api/<DogsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        
+        [HttpGet("ping")]
+        public IActionResult Ping()
         {
-            return "value";
+            return Ok("Dogshouseservice.Version1.0.1");
         }
-
-        // POST api/<DogsController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        
+        [HttpGet("dogs")]
+        public async Task<IActionResult> GetDogs([FromQuery] PaginationQuery query)
         {
+            var dogs = await _dogService.GetDogsAsync(query);
+            return Ok(dogs);
         }
-
-        // PUT api/<DogsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        
+        [HttpPost("dog")]
+        public async Task<IActionResult> CreateDog([FromBody] CreateDogRequest request)
         {
-        }
-
-        // DELETE api/<DogsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            try
+            {
+                await _dogService.CreateDogAsync(request);
+                return StatusCode(201, "Dog created successfully");
+            }
+            catch (InvalidOperationException e)
+            {
+                return Conflict(e.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "An internal error occurred");
+            }
         }
     }
 }
