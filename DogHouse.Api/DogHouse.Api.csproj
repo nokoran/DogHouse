@@ -16,4 +16,9 @@
       <Folder Include="Controllers\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DogHouse.Application\DogHouse.Application.csproj" />
+      <ProjectReference Include="..\DogHouse.Infrastructure\DogHouse.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

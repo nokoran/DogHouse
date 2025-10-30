@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DogHouse.Application\DogHouse.Application.csproj" />
+      <ProjectReference Include="..\DogHouse.Domain\DogHouse.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
