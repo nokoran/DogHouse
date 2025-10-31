@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Dogshouseservice.Api.DTOs;
+namespace Dogshouseservice.Application.DTOs;
 
 public class CreateDogRequest
 {
@@ -8,8 +8,8 @@ public class CreateDogRequest
     public string Name { get; set; }
     [Required]
     public string Color { get; set; }
-    [Required][Range(1, int.MaxValue)]
+    [Range(1, int.MaxValue)]
     public int TailLength { get; set; }
-    [Required][Range(1, int.MaxValue)]
+    [Range(1, int.MaxValue)]
     public int Weight { get; set; }
 }

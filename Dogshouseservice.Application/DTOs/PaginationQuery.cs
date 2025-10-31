@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Dogshouseservice.Api.DTOs;
+namespace Dogshouseservice.Application.DTOs;
 
 public class PaginationQuery
 {

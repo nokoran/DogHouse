@@ -1,4 +1,4 @@
-﻿using Dogshouseservice.Api.DTOs;
+﻿using Dogshouseservice.Application.DTOs;
 
 namespace Dogshouseservice.Application.Services;
 

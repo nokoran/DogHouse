@@ -1,4 +1,4 @@
-﻿using Dogshouseservice.Api.DTOs;
+﻿using Dogshouseservice.Application.DTOs;
 using Dogshouseservice.Application.Interfaces;
 using Dogshouseservice.Domain.Entities;
 

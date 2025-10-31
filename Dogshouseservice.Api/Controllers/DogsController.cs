@@ -1,4 +1,4 @@
-using Dogshouseservice.Api.DTOs;
+using Dogshouseservice.Application.DTOs;
 using Dogshouseservice.Application.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +30,11 @@ namespace Dogshouseservice.Api.Controllers
         [HttpPost("dog")]
         public async Task<IActionResult> CreateDog([FromBody] CreateDogRequest request)
         {
+            //перевірка для юніт тесту, при звичайному запуску цей функціонал виконує [ApiController]
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             try
             {
                 await _dogService.CreateDogAsync(request);
